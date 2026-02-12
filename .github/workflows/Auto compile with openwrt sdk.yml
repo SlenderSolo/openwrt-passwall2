@@ -115,7 +115,7 @@ jobs:
 
       - name: Initialization environment
         run: |
-          url_sdk="https://downloads.openwrt.org/releases/24.10.5/targets/x86/64/openwrt-sdk-24.10.5-x86-64_gcc-13.3.0_musl.Linux-x86_64.tar.zst"
+          url_sdk="url_sdk="https://downloads.openwrt.org/snapshots/targets/x86/64/openwrt-sdk-x86-64_gcc-14.3.0_musl.Linux-x86_64.tar.zst""
           wget $url_sdk
           file_name=$(echo $url_sdk | awk -F/ '{print $NF}')
           mkdir sdk
